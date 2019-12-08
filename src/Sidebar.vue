@@ -99,6 +99,7 @@ a {
   text-align: left;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
+  pointer-events: none;
 
   h2 {
     margin-top: 10px;
@@ -113,6 +114,7 @@ a {
 
   &.sidebar--active {
     transition: all 0.5s;
+    pointer-events: auto;
   }
 
   .project-link--active {
@@ -137,6 +139,7 @@ a {
   transition: all 1s;
   -webkit-transition: all 1s;
   z-index: 11;
+  pointer-events: auto;
 
   &:hover {
     cursor: pointer;
