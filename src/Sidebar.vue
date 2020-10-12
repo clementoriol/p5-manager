@@ -100,6 +100,8 @@ a {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   pointer-events: none;
+  display: flex;
+  flex-direction: column;
 
   h2 {
     margin-top: 10px;
@@ -110,6 +112,8 @@ a {
   ul {
     list-style: none;
     padding-left: 20px;
+    overflow: auto;
+    margin-top: 0;
   }
 
   &.sidebar--active {
@@ -169,10 +173,6 @@ a {
 }
 
 .about {
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  right: 0;
   font-size: 14px;
   padding-left: 20px;
 
