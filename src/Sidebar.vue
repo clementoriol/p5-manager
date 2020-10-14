@@ -57,20 +57,20 @@ export default {
       } else {
         return "/split-view/" + projects[0] + "+" + project;
       }
-    }
+    },
   },
-  mounted: function() {
+  mounted: function () {
     console.log("going to fetch");
     var self = this;
     $.get({
       url: "/api/p5rc",
       dataType: "json",
-      success: function(data) {
+      success: function (data) {
         self.projects = data.projects;
         self.collectionName = data.collectionName;
-      }
+      },
     });
-  }
+  },
 };
 </script>
 
